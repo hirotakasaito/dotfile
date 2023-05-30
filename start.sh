@@ -8,6 +8,9 @@ sudo apt purge -y vim neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 
+#set init.vim
+echo "source $SCRIPT_DIR/init.vim" >> ~/.config/nvim/init.vim
+
 #set alias
 echo "alias vim='${SCRIPT_DIR}/nvim.appimage'" >> ~/.bashrc
 echo "alias ide='${SCRIPT_DIR}/ide.sh'" >> ~/.bashrc

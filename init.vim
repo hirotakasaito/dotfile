@@ -63,8 +63,8 @@ if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
   " load the file which contain the plugin list
-  let s:toml      = '/home/hiro/dotfile/dein.toml'
-  let s:lazy_toml = '/home/hiro/dotfile/dein_lazy.toml'
+  let s:toml      = '~/dotfile/dein.toml'
+  let s:lazy_toml = '~/dotfile/dein_lazy.toml'
 
   call dein#load_toml(s:toml, {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
